@@ -47,7 +47,7 @@ bot.on('message', (msg) => {
         )
         
         bot.sendMessage(
-            '1355319786',
+            '5051720237',
             `${text}\n\nНаписал(-а): @${msg.chat.username !== 'undefined' ? msg.chat.username : msg.chat.first_name}`
         )
 
