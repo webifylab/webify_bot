@@ -48,7 +48,7 @@ bot.on('message', (msg) => {
         
         bot.sendMessage(
             '1355319786',
-            `${text}\n\nНаписал(-а): @${msg.chat.username}`
+            `${text}\n\nНаписал(-а): @${msg.chat.username !== 'undefined' ? msg.chat.username : msg.chat.first_name}`
         )
     }
 })
@@ -70,7 +70,6 @@ bot.on('callback_query', msg => {
         bot.sendMessage(chatId, `Напишите нашей wordpress сборщице: @a1marina`)
     }else if(data === 'tilda'){
         bot.sendMessage(chatId, `Напишите нашему тильда сборщику: @anton_webdesign`)
-        bot.rout
     }else if(data === 'webflow'){
         bot.sendMessage(chatId, `Напишите нашей webflow сборщице: @a1marina`)
     }else if(data === 'design'){
