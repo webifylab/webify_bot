@@ -50,6 +50,11 @@ bot.on('message', (msg) => {
             '1355319786',
             `${text}\n\nНаписал(-а): @${msg.chat.username !== 'undefined' ? msg.chat.username : msg.chat.first_name}`
         )
+
+        bot.sendMessage(
+            '5051720237',
+            `${text}\n\nНаписал(-а): @${msg.chat.username !== 'undefined' ? msg.chat.username : msg.chat.first_name, msg.chat.last_name}`
+        )   
     }
 })
 
